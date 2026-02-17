@@ -27,3 +27,6 @@ Allows the maker to cancel the escrow and retrieve their deposited tokens.
 
 ### 3. Take
 Allows a taker to fulfill the escrow by providing the requested tokens in exchange for the deposited tokens.
+
+## Test
+![alt text](image.png)

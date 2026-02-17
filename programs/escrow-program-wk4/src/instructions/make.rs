@@ -1,6 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_spl::{
-    associated_token::AssociatedToken, token_interface::{Mint, TokenAccount, TransferChecked,transfer_checked, TokenInterface}
+    associated_token::AssociatedToken, 
+    token_interface::{Mint, TokenAccount, TransferChecked,transfer_checked, TokenInterface}
 };
 
 use crate::Escrow;
@@ -51,7 +52,8 @@ impl<'info> Make<'info> {
             mint_a: self.mint_a.key(), 
             mint_b: self.mint_b.key(), 
             receive, 
-            bump: bumps.escrow });
+            bump: bumps.escrow
+         });
 
         Ok(())
     }
